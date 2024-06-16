@@ -65,23 +65,23 @@ def main():
     while not done:
         choice=input("enter your choice:")
         if choice=="1":
-            path=input("enter path:")
+            path=input("enter path (for key): ")
             pm.create_key(path)
         elif choice=="2":
-            path=input("enter path:")
+            path=input("enter path (for key): ")
             pm.load_key(path)
         elif choice=="3":
-            path=input("enter path:")
+            path=input("enter path (for password): ")
             pm.create_password_file(path, password)
         elif choice=="4":
-            path=input("enter path:")
+            path=input("enter path (for password): ")
             pm.load_password_file(path)
         elif choice=="5":
-            site=input("enter site:")
-            password=input("enter password:")
+            site=input("enter site: ")
+            password=input("enter password: ")
             pm.add_password(site, password)
         elif choice=="6":
-            site=input("what site do you want password for:")
+            site=input("what site do you want password for: ")
             print(f"Password for {site} is {pm.get_password(site)}")
         elif choice=="7":
             done=True
