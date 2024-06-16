@@ -65,16 +65,16 @@ def main():
     while not done:
         choice=input("enter your choice:")
         if choice=="1":
-            path=input("enter path (for key): ")
+            path=input("enter path (for key(example.key)): ")
             pm.create_key(path)
         elif choice=="2":
-            path=input("enter path (for key): ")
+            path=input("enter path (for key(example.key)): ")
             pm.load_key(path)
         elif choice=="3":
-            path=input("enter path (for password): ")
+            path=input("enter path (for password(examplepass.pass)): ")
             pm.create_password_file(path, password)
         elif choice=="4":
-            path=input("enter path (for password): ")
+            path=input("enter path (for password(examplepass.pass)): ")
             pm.load_password_file(path)
         elif choice=="5":
             site=input("enter site: ")
